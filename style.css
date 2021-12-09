@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.logo-barrio {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido {
+   height: 450px;
+   background-image: url('img/barrio-privado.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}   
+
+.viviendas {
+    text-align: center;
+}
+
+.casas-2amb {
+    background-color: aquamarine;
+    float: left;
+}
+
+.deptos {
+    background-color:burlywood;
+}
+
+.img {
+    width: 300px;
+}
+
+.img_footer {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    background-color: grey;
+}
