@@ -12,6 +12,6 @@ imagenes escalar a 1100x733
 
 - hacer el menu con las opciones de NOSOTROS, NUESTROS BARRIOS, CONTACTO
 
-imagenes de rostros: 514*640
+imagenes de rostros: 250*304
 
 
