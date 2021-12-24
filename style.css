@@ -19,8 +19,16 @@ body, html {
    background-attachment: fixed;
 }   
 
+.separador{
+    color: white;
+}
+
 .viviendas {
     text-align: center;
+}
+
+.fuente-titulo {
+    font-size: 5em;
 }
 
 .casas-2amb {
