@@ -10,8 +10,8 @@
 </head>
 <body>
  <header>
-  <nav class="navbar fixed-top navbar-light bg-light"> <!---->
-    <div class="container-fluid text-left" >
+  <nav class="navbar fixed-top navbar-light bg-light "> <!--BARRA DE NAVEGACION-->
+    <div class="container-fluid text-left .bg-primary"  >
       <a class="navbar-brand vinculo" href="#">Nosotros</a>
       <a class="navbar-brand vinculo" href="#">Nuestros Barrios</a>
       <a class="navbar-brand vinculo" href="#">Contacto</a>
@@ -19,20 +19,20 @@
   </nav>
     
  </header>
-   <section class="container-fluid contenido logo-barrio">
+   <section class="container-fluid contenido logo-barrio"> <!--LOGO-->
     <div>
       <img src="img/BarrioLacolonia.jpg" alt="Barrio La Colonia">
     </div>
    </section>
    
-   <section class="container-fluid viviendas">
+   <section class="container-fluid viviendas">  <!--TITULO DE TIPOS DE VIVIENDA-->
        <h3>TIPOS DE VIVIENDA</h3>
-        <div class="row justify-content-around contenedor-casas">
+        <div class="row justify-content-around ">
 
-            <div class="col-4 casas-2amb"> 
-                <h3>Casas de 2 ambientes</h3>
+            <div class="col-4 casas-2amb">  <!--TITULO DE TIPOS DE CASAS DE DOS AMBIENTES-->
+                <h3>Casas de dos ambientes</h3>
                 
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"> <!--CARROUSEL DE IMAGENES-->
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="img/casa.jpg" class="d-block w-100" alt="...">
@@ -47,9 +47,10 @@
                   </div>
             </div>
             
-            <div class="col-4 deptos">  
-                <h3>Departamentos amueblados</h3> 
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="col-4 deptos">                
+                <h3>Departamentos amueblados</h3> <!--TITULO DE TIPOS DE CASAS DE DOS AMBIENTES--> 
+
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"><!--CARROUSEL DE IMAGENES-->
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="img/monoambiente.jpg" class="d-block w-100" alt="...">
@@ -67,7 +68,12 @@
     </div>
    </section>
 
-   <div class="container tarjetas">
+   <div class="container-fluid">
+      <div class="row"></div>
+        <div class="col"></div>     
+   </div>
+
+   <div class="container tarjetas"> <!--CONTENEDOR DE TARJETAS PERSONALES-->
       <div class="row justify-content-between ">
         <div class="card mb-3" style="max-width: 500px;">
           <div class="row g-0">
