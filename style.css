@@ -1,14 +1,60 @@
+@font-face {
+    font-family: 'aroma';
+    src: url('fonts/AROMA-Bold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'qontra' ;
+    src: url(fonts/Qontra.otf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inkfree';
+    src: url(fonts/Inkfree.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "lemon-milk";
+    src: url(fonts/LEMONMILK-Bold.otf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(fonts/Roboto-LightItalic.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto-medium";
+    src: url(fonts/Roboto-Medium.ttf);
+    font-style: normal;
+}
+
 body, html {
     margin: 0;
     padding: 0;
 }
 
+.card-text{
+    font-family: roboto; 
+}   
+.card-title {
+    font-family: roboto-medium;
+}
 
 
 .logo-barrio {
     display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h1 {
+    font-family: lemon-milk;
 }
 
 .contenido {
@@ -66,7 +112,17 @@ body, html {
     text-align: center;
 }
 
+.footer p {
+    color: white;
+}
+
 .footer {
+    font-family: inkfree;
     text-align: center;
     background-color: grey;
 }
+
+
+/* inicio de css de animacion de texto*/
+
+  /* fin de css de animacion de texto*/
