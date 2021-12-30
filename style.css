@@ -34,6 +34,7 @@
     font-style: normal;
 }
 
+
 body, html {
     margin: 0;
     padding: 0;
@@ -46,6 +47,10 @@ body, html {
     font-family: roboto-medium;
 }
 
+.titulos {
+text-align: center;
+background-color: aquamarine;
+}
 
 .logo-barrio {
     display: flex;
@@ -69,8 +74,14 @@ h1 {
     color: white;
 }
 
+.contenedor-viviendas {
+    margin-bottom: 20px;
+}
+
 .viviendas {
     text-align: center;
+    background-color: chartreuse;
+
 }
 
 .fuente-titulo {
@@ -80,10 +91,15 @@ h1 {
 .casas-2amb {
     background-color: aquamarine;
     float: left;
+    margin-bottom: 10px;
 }
 
+.carousel {
+    margin-bottom: 10px;
+} 
 .deptos {
-    background-color:burlywood;
+    background-color:rgb(37, 93, 197);
+    margin-bottom: 10px;
 }
 
 .img {
