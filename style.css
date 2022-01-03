@@ -1,4 +1,32 @@
+:root {
+  --fs-xl: 5rem;
+  --fs-600: 2rem;
+  --fs-400: 1rem;
+}
 
+@media (max-width: 930px) {
+  :root {
+    --fs-xl: 4rem;
+    --fs-600: 3rem;
+    --fs-400: 1.125rem;
+  }
+}
+
+@media (max-width: 750px) {
+    :root {
+      --fs-xl: 3rem;
+      --fs-600: 3rem;
+      --fs-400: 1.125rem;
+    }
+  }
+  
+  @media (max-width: 570px) {
+    :root {
+      --fs-xl: 2rem;
+      --fs-600: 3rem;
+      --fs-400: 1.125rem;
+    }
+  }
 
 @font-face {
     font-family: 'aroma';
@@ -52,6 +80,7 @@ body, html {
 .titulos {
 text-align: center;
 background-color: aquamarine;
+font-size: var(--fs-xl);
 }
 
 .logo-barrio {
@@ -72,6 +101,10 @@ h1 {
    background-attachment: fixed;
 }   
 
+
+.vivienda-tipos{
+    font-size: var(--fs-600);
+}
 .separador{
     color: white;
 }
@@ -80,15 +113,17 @@ h1 {
     margin-bottom: 20px;
 }
 
+.carrousel-div {
+    background-color:deeppink;
+    height: 80px;
+    
+} 
+
 .viviendas {
     text-align: center;
     background-color: chartreuse;
-
 }
 
-.fuente-titulo {
-    font-size: 5em;
-}
 
 .casas-2amb {
     background-color: aquamarine;
@@ -141,6 +176,13 @@ h1 {
 }
 
 
-/* inicio de css de animacion de texto*/
+
+/* que es lo que tengo que hacer para hacer responsive el texto
+usar las variables que tengo dedinidas arriba de todo en la parte de root.
+me falta definir las variables para los titulos de los carrouseles
+
+*/
+
+
 
   /* fin de css de animacion de texto*/
