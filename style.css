@@ -1,30 +1,31 @@
 :root {
   --fs-xl: 5rem;
   --fs-600: 2rem;
-  --fs-400: 1rem;
+  --carrousel-tam: 5rem;
+  
 }
 
 @media (max-width: 930px) {
   :root {
     --fs-xl: 4rem;
-    --fs-600: 3rem;
-    --fs-400: 1.125rem;
+    --fs-600: 1.50rem;
+    --carrousel-tam: 3.75rem;
   }
 }
 
 @media (max-width: 750px) {
     :root {
       --fs-xl: 3rem;
-      --fs-600: 3rem;
-      --fs-400: 1.125rem;
+      --fs-600: 1.25rem;
+      --carrousel-tam: 3rem;
     }
   }
   
   @media (max-width: 570px) {
     :root {
       --fs-xl: 2rem;
-      --fs-600: 3rem;
-      --fs-400: 1.125rem;
+      --fs-600: 1rem;
+      --carrousel-tam: 2.6rem;
     }
   }
 
@@ -115,9 +116,10 @@ h1 {
 
 .carrousel-div {
     background-color:deeppink;
-    height: 80px;
-    
+    height: var(--carrousel-tam)
+ 
 } 
+
 
 .viviendas {
     text-align: center;
