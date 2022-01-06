@@ -3,7 +3,7 @@
   --fs-600: 2rem;
   --carrousel-tam: 5rem;
   --fs-form: 1.75rem;
-  --bk-co: #EAFAF9;
+  --bk-todo: #EAFAF9;
   --bk-vi: #c2f7eb;
 }
 
@@ -71,13 +71,13 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: var(--bk-co);
+    background-color: var(--bk-todo);
 }
 
 .header {
     position: fixed;
     z-index: 100;
-    outline: red 2px solid;
+    
 }
 
 .barra-navegacion {
@@ -90,11 +90,9 @@ font-family: roboto-medium;
 .barra_nav {
     text-align: center;
     position: fixed;
-    background-color: var(--bk-co);
+    background-color: var(--bk-todo);
     width: 100%;
     display: inline-block;
-    
-      
 }
 
 
@@ -102,7 +100,7 @@ font-family: roboto-medium;
     list-style: none;
     margin-top: 10px;
     margin-bottom: 0;
-        }
+}
 
 .barra_nav ul li {
     display: inline-block;       
@@ -153,16 +151,19 @@ font-family: roboto-medium;
 
 .card-text{
     font-family: roboto; 
-
+    
 }   
 .card-title {
     font-family: roboto-medium;
+    
 }
 
 .titulos {
 text-align: center;
-background-color: var(--bk-co);
+background-color: var(--bk-todo);
 font-size: var(--fs-xl);
+outline: black 2px solid;
+width: 100%;
 }
 
 .logo-barrio {
@@ -202,13 +203,19 @@ h1 {
 }
 
 .contenedor-viviendas {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: grey 2px solid;
+    border-radius: 10px;
+    
 }
 
 .carrousel-div {
     background-color: var(--bk-vi);
-    height: var(--carrousel-tam)
- 
+    height: var(--carrousel-tam);
+    margin-bottom: 10px;
+    outline: grey 2px solid;
+
 } 
 
 .viviendas {
@@ -223,7 +230,8 @@ h1 {
 }
 
 .carousel {
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
+    outline: grey 2px solid;
 }
 
 .deptos {
