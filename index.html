@@ -10,7 +10,7 @@
 </head>
 <body>
  <header>
-  <nav class="navbar fixed-top navbar-light bg-light "> <!--BARRA DE NAVEGACION-->
+  <nav class="navbar fixed-top navbar-light bg-light barra-navegacion"> <!--BARRA DE NAVEGACION-->
     <div class="container-fluid text-left .bg-primary"  >
       <a class="navbar-brand vinculo" href="#">Nosotros</a>
       <a class="navbar-brand vinculo" href="#">Nuestros Barrios</a>
@@ -185,23 +185,55 @@
       </div> 
 
    </div>
-   
-   <form>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+
+
+  <div class="container form-contenedor">
+   <div class="row form-contenedor-2">
+     <div class="col-2"></div>
+     <div class="col-8 align-self-center ">
+      <form class="formulario">
+        
+       <span >Para estar al tanto de nuestras novedades, deja tu Email para recibir información sobre los nuevos proyectos inmobiliarios</span>
+       
+       <hr class="separador-2"/> <!--SEPARADOR-->
+
+        <div class="row justify-content-center">
+
+       <div class="mb-3 col-md-8" >
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" >
+        </div>
+
+      
+
+     <div class="mb-3 col-md-8">
+           <label for="apellido" class="form-label">Apellido</label>
+           <input type="text" class="form-control" >
+      </div>
+
+      <div class="mb-3 col-md-8" >
+        <label for="Email" class="form-label">Correo Electronico</label>
+        <input type="email" class="form-control" >
+      </div>
+      <hr class="separador"/> <!--SEPARADOR-->
+      <div class="col-md-8">
+    <select class="form-select " aria-label="Default select example">
+
+      <option selected>Selecciona el Desarrollo Urbanistico</option>
+      <option value="1">Morón - Buenos Aires</option>
+      <option value="2">Parana - Entre Rios</option>
+      <option value="3">Monserrat - CABA</option>
+    </select>
+  </div>
+  <hr class="separador"/> <!--SEPARADOR-->
+
+    <button type="submit" class="btn btn-primary col-md-8">Enviar</button>
+      
+  </div>
   </form>
+</div>
+</div>
+</div>
         <footer class="footer">
            <p>Sitio desarrollado por emma desing </p>
 
