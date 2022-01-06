@@ -10,7 +10,7 @@
 </head>
 <body>
  <header>
-  <nav class="navbar fixed-top navbar-light bg-light "> <!--BARRA DE NAVEGACION-->
+  <nav class="navbar fixed-top navbar-light bg-light barra-navegacion"> <!--BARRA DE NAVEGACION-->
     <div class="container-fluid text-left .bg-primary"  >
       <a class="navbar-brand vinculo" href="#">Nosotros</a>
       <a class="navbar-brand vinculo" href="#">Nuestros Barrios</a>
@@ -28,17 +28,18 @@
    <hr class="separador"/> <!--SEPARADOR-->
 
    <section class="container-fluid viviendas">  <!--TITULO DE TIPOS DE VIVIENDA-->
-       <h3 class="fuente-titulo">TIPOS DE VIVIENDA</h3>
+       <h1 class="titulos">TIPOS DE VIVIENDAS</h1>
 
-       <hr class="separador"/> <!--SEPARADOR-->
+       <hr class="separador"/> <!-s-SEPARADOR-->
 
         <div class="row justify-content-around ">
 
-            <div class="col-4 casas-2amb">  <!--TITULO DE TIPOS DE CASAS DE DOS AMBIENTES-->
-                <h3>Casas de dos ambientes</h3>
-                
+            <div class="col-4 casas-2amb contenedor-viviendas">  <!--TITULO DE TIPOS DE CASAS DE DOS AMBIENTES-->
+              <div class="col-12 carrousel-div"> 
+              <h3 class="col-12 vivienda-tipos"> Casas de dos ambientes</h3>
+            </div>  
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"> <!--CARROUSEL DE IMAGENES-->
-                    <div class="carousel-inner">
+                    <div class="carousel-inner carrousel-tam">
                       <div class="carousel-item active">
                         <img src="img/casa.jpg" class="d-block w-100" alt="...">
                       </div>
@@ -52,12 +53,13 @@
                   </div>
             </div>
            
-            <div class="col-4 deptos">                
-                <h3>Departamentos amueblados</h3> <!--TITULO DE TIPOS DE CASAS DE DOS AMBIENTES--> 
-
+            <div class="col-4 deptos contenedor-viviendas">                
+              <div class="col-12 carrousel-div"> 
+              <h3 class="col-12 vivienda-tipos" >Departamentos de un ambiente</h3> <!--TITULO DE TIPOS DE CASAS DE DOS AMBIENTES--> 
+              </div>    
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"><!--CARROUSEL DE IMAGENES-->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
+                    <div class="carousel-inner carrousel-tam carrousel-position">
+                      <div class="carousel-item active ">
                         <img src="img/monoambiente.jpg" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
@@ -73,21 +75,23 @@
     </div>
    </section>
 
-   <div class="container-fluid">
-      <div class="row"></div>
-        <div class="col"></div>     
-   </div>
+   
    <hr class="separador"/> <!--SEPARADOR-->
+
+   <h1 class="titulos">Algunos de nuestros clientes</h1>
+
+   <hr class="separador"/> <!--SEPARADOR-->
+
    <div class="container tarjetas"> <!--CONTENEDOR DE TARJETAS PERSONALES-->
       <div class="row justify-content-between ">
-        <div class="card mb-3" style="max-width: 500px;">
+        <div class="card mb-3" style="max-width: 500px;"> 
           <div class="row g-0">
             <div class="col-md-4">
               <img src="img/personas/ema.jpg" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Juana Fernandez</h5>
                 <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi totam perferendis beatae provident magni unde quam optio iusto vero eos! Odio optio ut necessitatibus maxime quod facilis nihil expedita voluptatibus?</p>
                
               </div>
@@ -102,7 +106,7 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Jose Alonso</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio libero doloremque vel, illum enim consequatur aut rem tempore nemo? Repudiandae obcaecati laborum blanditiis impedit fugit cum! Nam, eligendi aut?</p>
               
                 </div>
@@ -120,7 +124,7 @@
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Miguel Sanchez</h5>
                 <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi totam perferendis beatae provident magni unde quam optio iusto vero eos! Odio optio ut necessitatibus maxime quod facilis nihil expedita voluptatibus?</p>
              
               </div>
@@ -135,7 +139,7 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Maria Gutierrez</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio libero doloremque vel, illum enim consequatur aut rem tempore nemo? Repudiandae obcaecati laborum blanditiis impedit fugit cum! Nam, eligendi aut?</p>
                  
                 </div>
@@ -150,11 +154,11 @@
         <div class="card mb-3" style="max-width: 500px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="img/personas/manuel.jpg" class="img-fluid rounded-start" alt="...">
+              <img src="img/personas/chino.jpg" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Manuel Ledesma</h5>
                 <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi totam perferendis beatae provident magni unde quam optio iusto vero eos! Odio optio ut necessitatibus maxime quod facilis nihil expedita voluptatibus?</p>
              
               </div>
@@ -169,7 +173,7 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Pedro Zarate</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio libero doloremque vel, illum enim consequatur aut rem tempore nemo? Repudiandae obcaecati laborum blanditiis impedit fugit cum! Nam, eligendi aut?</p>
                  
                 </div>
@@ -181,14 +185,57 @@
       </div> 
 
    </div>
-   
-  
-  
-   
-       
+
+
+  <div class="container form-contenedor">
+   <div class="row form-contenedor-2">
+     <div class="col-2"></div>
+     <div class="col-8 align-self-center ">
+      <form class="formulario">
         
+       <span >Para estar al tanto de nuestras novedades, deja tu Email para recibir información sobre los nuevos proyectos inmobiliarios</span>
+       
+       <hr class="separador-2"/> <!--SEPARADOR-->
+
+        <div class="row justify-content-center">
+
+       <div class="mb-3 col-md-8" >
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" >
+        </div>
+
+      
+
+     <div class="mb-3 col-md-8">
+           <label for="apellido" class="form-label">Apellido</label>
+           <input type="text" class="form-control" >
+      </div>
+
+      <div class="mb-3 col-md-8" >
+        <label for="Email" class="form-label">Correo Electronico</label>
+        <input type="email" class="form-control" >
+      </div>
+      <hr class="separador"/> <!--SEPARADOR-->
+      <div class="col-md-8">
+    <select class="form-select " aria-label="Default select example">
+
+      <option selected>Selecciona el Desarrollo Urbanistico</option>
+      <option value="1">Morón - Buenos Aires</option>
+      <option value="2">Parana - Entre Rios</option>
+      <option value="3">Monserrat - CABA</option>
+    </select>
+  </div>
+  <hr class="separador"/> <!--SEPARADOR-->
+
+    <button type="submit" class="btn btn-primary col-md-8">Enviar</button>
+      
+  </div>
+  </form>
+</div>
+</div>
+</div>
         <footer class="footer">
-           <p>Sitio desarrollado por emma - <img src="img/emma desing.png" class="img_footer"></p>
+           <p>Sitio desarrollado por emma desing </p>
 
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

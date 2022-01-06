@@ -1,14 +1,104 @@
+:root {
+  --fs-xl: 5rem;
+  --fs-600: 2rem;
+  --carrousel-tam: 5rem;
+  --fs-form: 1.75rem;
+}
+
+@media (max-width: 930px) {
+  :root {
+    --fs-xl: 4rem;
+    --fs-600: 1.50rem;
+    --carrousel-tam: 3.75rem;
+  }
+}
+
+@media (max-width: 750px) {
+    :root {
+      --fs-xl: 3rem;
+      --fs-600: 1.25rem;
+      --carrousel-tam: 3rem;
+    }
+  }
+  
+  @media (max-width: 570px) {
+    :root {
+      --fs-xl: 2rem;
+      --fs-600: 1rem;
+      --carrousel-tam: 2.6rem;
+    }
+  }
+
+@font-face {
+    font-family: 'aroma';
+    src: url('fonts/AROMA-Bold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'qontra' ;
+    src: url(fonts/Qontra.otf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inkfree';
+    src: url(fonts/Inkfree.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "lemon-milk";
+    src: url(fonts/LEMONMILK-Bold.otf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(fonts/Roboto-LightItalic.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto-medium";
+    src: url(fonts/Roboto-Medium.ttf);
+    font-style: normal;
+}
+
+
 body, html {
     margin: 0;
     padding: 0;
 }
 
+.barra-navegacion {
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.50);
+-webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.50);
+-moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.50);
 
+}
+
+.card-text{
+    font-family: roboto; 
+}   
+.card-title {
+    font-family: roboto-medium;
+}
+
+.titulos {
+text-align: center;
+background-color: aquamarine;
+font-size: var(--fs-xl);
+}
 
 .logo-barrio {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h1 {
+    font-family: lemon-milk;
 }
 
 .contenido {
@@ -19,25 +109,67 @@ body, html {
    background-attachment: fixed;
 }   
 
+.vivienda-tipos{
+    font-size: var(--fs-600);
+}
+
 .separador{
     color: white;
 }
 
-.viviendas {
-    text-align: center;
+.separador-2 {
+    color: black;
 }
 
-.fuente-titulo {
-    font-size: 5em;
+.contenedor-viviendas {
+    margin-bottom: 20px;
+}
+
+.carrousel-div {
+    background-color:deeppink;
+    height: var(--carrousel-tam)
+ 
+} 
+
+.viviendas {
+    text-align: center;
+    background-color: chartreuse;
 }
 
 .casas-2amb {
     background-color: aquamarine;
     float: left;
+    margin-bottom: 10px;
+}
+
+.carousel {
+    margin-bottom: 10px;
 }
 
 .deptos {
-    background-color:burlywood;
+    background-color:rgb(37, 93, 197);
+    margin-bottom: 10px;
+}
+
+.formulario {
+    border: solid;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 15px;
+   
+}
+
+.form-contenedor {
+  background-color:burlywood;
+ 
+  font-family: qontra;
+ font-size: var(--fs-form);
+ 
+}
+
+.form-contenedor-2{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img {
@@ -66,7 +198,24 @@ body, html {
     text-align: center;
 }
 
+.footer p {
+    color: white;
+}
+
 .footer {
+    font-family: inkfree;
     text-align: center;
     background-color: grey;
 }
+
+
+
+/* que es lo que tengo que hacer para hacer responsive el texto
+usar las variables que tengo dedinidas arriba de todo en la parte de root.
+me falta definir las variables para los titulos de los carrouseles
+
+*/
+
+
+
+  /* fin de css de animacion de texto*/
