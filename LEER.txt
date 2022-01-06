@@ -8,10 +8,12 @@ COSAS QUE FALTAN
 
 4. PROBAR EL TEMA DE NODE JS Y JASON QUE VI EN EL VIDEO EL OTRO DIA
 
-imagenes escalar a 1100x733
+imagenes escalar a 1100x733 -- listo
 
-- hacer el menu con las opciones de NOSOTROS, NUESTROS BARRIOS, CONTACTO
+- hacer el menu con las opciones de NOSOTROS, NUESTROS BARRIOS, --- LISTO
 
 imagenes de rostros: 250*304
+
+ME FALTA DAR INTERACTIVIDAD AL FORMUALARIO
 
 

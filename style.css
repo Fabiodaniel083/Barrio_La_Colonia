@@ -3,6 +3,8 @@
   --fs-600: 2rem;
   --carrousel-tam: 5rem;
   --fs-form: 1.75rem;
+  --bk-co: #EAFAF9;
+  --bk-vi: #c2f7eb;
 }
 
 @media (max-width: 930px) {
@@ -69,17 +71,75 @@
 body, html {
     margin: 0;
     padding: 0;
+    background-color: var(--bk-co);
 }
 
 .barra-navegacion {
     box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.50);
 -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.50);
 -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.50);
+font-family: roboto-medium;
 
 }
 
+
+
+.barra_nav ul {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 0;
+    }
+
+.barra_nav ul li {
+    display:inline-block;       
+}
+
+.barra_nav ul li a {
+    text-decoration: none;
+}
+
+/*** ESTILOS BOTÓN SLIDE CLOSE ***/
+.ov-btn-slide-close {
+    background: #fff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 1px solid #4741d7; /* tamaño y color de borde */
+    padding: 5px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    
+    }
+    .ov-btn-slide-close:before, .ov-btn-slide-close:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    background-color: #4741d7; /* color de fondo hover */
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    }
+    .ov-btn-slide-close:after {
+    left: 100%;
+    }
+    .ov-btn-slide-close:hover {
+    color: #fff; /* color de fuente hover */
+    }
+    .ov-btn-slide-close:hover:before {
+    left: 0;
+    }
+    .ov-btn-slide-close:hover:after {
+    left: 50%;
+    }
+
 .card-text{
     font-family: roboto; 
+
 }   
 .card-title {
     font-family: roboto-medium;
@@ -87,7 +147,7 @@ body, html {
 
 .titulos {
 text-align: center;
-background-color: aquamarine;
+background-color: var(--bk-co);
 font-size: var(--fs-xl);
 }
 
@@ -95,6 +155,12 @@ font-size: var(--fs-xl);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo-barrio img {
+    box-shadow: 0px 20px 20px 20px rgba(0,0,0,0.50);
+-webkit-box-shadow: 0px 20px 20px 20px rgba(0,0,0,0.50);
+-moz-box-shadow: 0px 20px 20px px rgba(0,0,0,0.50);
 }
 
 h1 {
@@ -114,7 +180,7 @@ h1 {
 }
 
 .separador{
-    color: white;
+    background-color: var(--bk-co);
 }
 
 .separador-2 {
@@ -126,18 +192,18 @@ h1 {
 }
 
 .carrousel-div {
-    background-color:deeppink;
+    background-color: var(--bk-vi);
     height: var(--carrousel-tam)
  
 } 
 
 .viviendas {
     text-align: center;
-    background-color: chartreuse;
+    background-color: var(--bk-co);
 }
 
 .casas-2amb {
-    background-color: aquamarine;
+    background-color: var(--bk-co);
     float: left;
     margin-bottom: 10px;
 }
@@ -147,7 +213,7 @@ h1 {
 }
 
 .deptos {
-    background-color:rgb(37, 93, 197);
+    background-color: var(--bk-co);
     margin-bottom: 10px;
 }
 
@@ -216,6 +282,10 @@ me falta definir las variables para los titulos de los carrouseles
 
 */
 
+
+/* debbuger
+border: red 2px solid;
+*/
 
 
   /* fin de css de animacion de texto*/
