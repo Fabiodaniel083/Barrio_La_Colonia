@@ -262,8 +262,16 @@ h1 {
 
 .img {
     width: 300px;
+    padding-top: auto;
+    padding-bottom: auto;
 }
 
+.rostro {
+   
+    padding: 7 0 7 0;
+
+    
+}
 .tarjetas {
     margin-top: 10px;
 }

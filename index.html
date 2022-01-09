@@ -14,9 +14,9 @@
    <div class="barra_nav">
      <nav class="barra-navegacion"> 
       <ul>
-      <li><a class="ov-btn-slide-close" href="#"><img src="https://img.icons8.com/stickers/30/000000/info.png"/>  Nosotros</a></li>
-      <li><a class="ov-btn-slide-close" href="#"><img src="https://img.icons8.com/stickers/30/000000/share.png"/>  Nuestros Barrios</a></li>
-      <li><a class="ov-btn-slide-close" href="#"><img src="https://img.icons8.com/stickers/30/000000/contacts.png"/>  Contacto</a></li>
+      <li><a class="ov-btn-slide-close" href="#"><img src="https://img.icons8.com/stickers/25/000000/info.png"/>  Nosotros</a></li>
+      <li><a class="ov-btn-slide-close" href="#"><img src="https://img.icons8.com/stickers/25/000000/share.png"/>  Nuestros Barrios</a></li>
+      <li><a class="ov-btn-slide-close" href="#"><img src="https://img.icons8.com/stickers/25/000000/contacts.png"/>  Contacto</a></li>
     </ul>  
   </nav>
 </div>  
@@ -34,52 +34,74 @@
    <hr class="separador"/> <!--SEPARADOR-->
 
 <!--inicio de la seccion de viviendas-->   
+<h1 class="titulos">TIPOS DE VIVIENDAS</h1>
+
    <section class="viviendas">  <!--TITULO DE TIPOS DE VIVIENDA-->
-       <h1 class="titulos">TIPOS DE VIVIENDAS</h1>
-
-       <hr class="separador"/> <!--s-SEPARADOR-->
-
-        <div class="row justify-content-around ">
-
-            <div class="col-4 casas-2amb contenedor-viviendas">  <!--TITULO DE TIPOS DE CASAS DE DOS AMBIENTES-->
-              <div class="col-12 carrousel-div"> 
-              <h3 class="col-12 vivienda-tipos"> Casas de dos ambientes</h3>
-            </div>  
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"> <!--CARROUSEL DE IMAGENES-->
-                    <div class="carousel-inner carrousel-tam">
-                      <div class="carousel-item active">
-                        <img src="img/casa.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/casa-2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/casa-3.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                  </div>
+    <div class="row justify-content-evenly">
+      <div class="col-4">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/casa.jpg" class="d-block w-100" alt="casa">
             </div>
-           
-            <div class="col-4 deptos contenedor-viviendas">                
-              <div class="col-12 carrousel-div"> 
-              <h3 class="col-12 vivienda-tipos" >Deptos de un ambiente</h3> <!--TITULO DE TIPOS DE CASAS DE DOS AMBIENTES--> 
-              </div>    
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"><!--CARROUSEL DE IMAGENES-->
-                    <div class="carousel-inner carrousel-tam carrousel-position">
-                      <div class="carousel-item active ">
-                        <img src="img/monoambiente.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/monoambiente-2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/monoambiente-3.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                  </div>
+            <div class="carousel-item">
+              <img src="img/casa-2.jpg" class="d-block w-100" alt="casa">
             </div>
-        
-    </div>
+            <div class="carousel-item">
+              <img src="img/casa-3.jpg" class="d-block w-100" alt="casa">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previo</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+    </section>
+    <section>
+      <div class="col-4">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/monoambiente.jpg" class="d-block w-100" alt="monoambiente">
+            </div>
+            <div class="carousel-item">
+              <img src="img/monoambiente-2.jpg" class="d-block w-100" alt="monoambiente">
+            </div>
+            <div class="carousel-item">
+              <img src="img/monoambiente-3.jpg" class="d-block w-100" alt="monoambiente">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previo</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    
+
+
+
    </section>
 
 <!--fin de la seccion de viviendas-->
@@ -96,7 +118,7 @@
       <div class="row justify-content-between ">
         <div class="card mb-3" style="max-width: 500px;"> 
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-md-4 rostro">
               <img src="img/personas/ema.jpg" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
@@ -111,8 +133,8 @@
        
           <div class="card mb-3" style="max-width: 500px;">
             <div class="row g-0">
-              <div class="col-md-4">
-                <img src="img/personas/jose.png" class="img-fluid rounded-start" alt="...">
+              <div class="col-md-4 rostro">
+                <img src="img/personas/jose.png" class="img-fluid rounded-start " alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -129,7 +151,7 @@
       <div class="row justify-content-between ">
         <div class="card mb-3" style="max-width: 500px;">
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-md-4 rostro">
               <img src="img/personas/juan.jpg" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
@@ -144,7 +166,7 @@
        
           <div class="card mb-3" style="max-width: 500px;">
             <div class="row g-0">
-              <div class="col-md-4">
+              <div class="col-md-4 rostro">
                 <img src="img/personas/lucia.jpg" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-8">
@@ -156,21 +178,22 @@
               </div>
             </div>
           </div>
-      
-          
       </div> 
 
+
+
+
       <div class="row justify-content-between ">
-        <div class="card mb-3" style="max-width: 500px;">
+        <div class="card mb-3" style="max-width: 500px;"> 
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-md-4 rostro">
               <img src="img/personas/chino.jpg" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Manuel Ledesma</h5>
                 <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi totam perferendis beatae provident magni unde quam optio iusto vero eos! Odio optio ut necessitatibus maxime quod facilis nihil expedita voluptatibus?</p>
-             
+               
               </div>
             </div>
           </div>
@@ -178,23 +201,25 @@
        
           <div class="card mb-3" style="max-width: 500px;">
             <div class="row g-0">
-              <div class="col-md-4">
-                <img src="img/personas/pedro.jpg" class="img-fluid rounded-start" alt="...">
+              <div class="col-md-4 rostro">
+                <img src="img/personas/pedro.jpg" class="img-fluid rounded-start " alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Pedro Zarate</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio libero doloremque vel, illum enim consequatur aut rem tempore nemo? Repudiandae obcaecati laborum blanditiis impedit fugit cum! Nam, eligendi aut?</p>
-                 
+              
                 </div>
               </div>
             </div>
           </div>
       
-          
-      </div> 
+      </div>
 
-   </div>
+
+
+
+
 
 <!--fin de la seccion de clientes-->   
 
