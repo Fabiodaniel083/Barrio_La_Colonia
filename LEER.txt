@@ -17,3 +17,100 @@ imagenes de rostros: 250*304
 ME FALTA DAR INTERACTIVIDAD AL FORMUALARIO
 
 
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"> <!--CARROUSEL DE IMAGENES-->
+                    <div class="carousel-inner carrousel-tam">
+                      <div class="carousel-item active">
+                        <img src="img/casa.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/casa-2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/casa-3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+
+                   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"><!--CARROUSEL DE IMAGENES-->
+                    <div class="carousel-inner carrousel-tam carrousel-position">
+                      <div class="carousel-item active ">
+                        <img src="img/monoambiente.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/monoambiente-2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/monoambiente-3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="row justify-content-around "> 
+
+            <div class="col-4 casas-2amb contenedor-viviendas">  <!--TITULO DE TIPOS DE CASAS DE DOS AMBIENTES-->
+              <div class="col-12 carrousel-div"> 
+              <h3 class="col-12 vivienda-tipos"> Casas</h3>
+            </div>  
+              
+            
+            
+              <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"> <!--INICIO CARROUSEL DE IMAGENES CASAS-->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="img/casa.jpg" class="d-block w-100" alt="...">
+                  </div>
+               <div class="carousel-item">
+                  <img src="img/casa-2.jpg" class="d-block w-100 " alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/casa-3.jpg" class="d-block w-100 " alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>  <!--FIN CARROUSEL DE IMAGENES DE CASAS-->
+                
+           </div>
+        </div> 
+
+        <div class="row justify-content-around "> 
+            <div class="col-4 deptos contenedor-viviendas">                
+              <div class="col-12 carrousel-div"> 
+              <h3 class="col-12 vivienda-tipos" >Departamentos</h3> <!--TITULO DE TIPOS DE CASAS DE DOS AMBIENTES--> 
+              </div>  
+              
+              <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/monoambiente.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/monoambiente-2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/monoambiente-3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+               
+            </div>
+        
+        </div>

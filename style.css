@@ -1,7 +1,8 @@
 :root {
-  --fs-xl: 5rem;
-  --fs-600: 2rem;
+  --fontsize-xl: 4rem;
+  --fontsize-600: 2rem;
   --carrousel-tam: 5rem;
+  --tarjetas-tamaño: 3rem;
   --fs-form: 1.75rem;
   --bk-todo: #EAFAF9;
   --bk-vi: #c2f7eb;
@@ -9,25 +10,28 @@
 
 @media (max-width: 930px) {
   :root {
-    --fs-xl: 4rem;
-    --fs-600: 1.50rem;
+    --fontsize-xl: 4rem;
+    --fontsize-600: 1.50rem;
     --carrousel-tam: 3.75rem;
+    --tarjetas-tamaño: 2.5rem;
   }
 }
 
 @media (max-width: 750px) {
     :root {
-      --fs-xl: 3rem;
-      --fs-600: 1.25rem;
+      --fontsize-xl: 3rem;
+      --fontsize-600: 1.25rem;
       --carrousel-tam: 3rem;
+      --tarjetas-tamaño: 3rem;
     }
   }
   
   @media (max-width: 570px) {
     :root {
-      --fs-xl: 2rem;
-      --fs-600: 1rem;
+      --fontsize-xl: 2rem;
+      --fontsize-600: 1rem;
       --carrousel-tam: 2.6rem;
+      --tarjetas-tamaño: 2rem;
     }
   }
 
@@ -161,7 +165,7 @@ font-family: roboto-medium;
 .titulos {
 text-align: center;
 background-color: var(--bk-todo);
-font-size: var(--fs-xl);
+font-size: var(--fontsize-xl);
 outline: black 2px solid;
 width: 100%;
 }
@@ -173,7 +177,7 @@ width: 100%;
 }
 
 .logo-barrio img {
-    box-shadow: 0px 20px 20px 20px rgba(0,0,0,0.50);
+box-shadow: 0px 20px 20px 20px rgba(0,0,0,0.50);
 -webkit-box-shadow: 0px 20px 20px 20px rgba(0,0,0,0.50);
 -moz-box-shadow: 0px 20px 20px px rgba(0,0,0,0.50);
 }
@@ -190,10 +194,6 @@ h1 {
    background-attachment: fixed;
 }   
 
-.vivienda-tipos{
-    font-size: var(--fs-600);
-}
-
 .separador{
     background-color: var(--bk-co);
 }
@@ -202,41 +202,23 @@ h1 {
     color: black;
 }
 
-.contenedor-viviendas {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: grey 2px solid;
-    border-radius: 10px;
-    
-}
-
-.carrousel-div {
-    background-color: var(--bk-vi);
-    height: var(--carrousel-tam);
-    margin-bottom: 10px;
-    outline: grey 2px solid;
-
-} 
-
 .viviendas {
+    
     text-align: center;
     background-color: var(--bk-co);
 }
 
-.casas-2amb {
-    background-color: var(--bk-co);
-    float: left;
-    margin-bottom: 10px;
+.contenedor-carru {
+    outline: grey 2px solid;
+    padding: 5px;
+    width: 600px;
+    margin-right:auto;
+    margin-left: auto;
 }
 
 .carousel {
     /*margin-bottom: 10px;*/
     outline: grey 2px solid;
-}
-
-.deptos {
-    background-color: var(--bk-co);
-    margin-bottom: 10px;
 }
 
 .formulario {
@@ -260,25 +242,23 @@ h1 {
     margin-right: auto;
 }
 
-.img {
-    width: 300px;
+.contenedor-tarjeta{
+    width: var(--tarjetas-tamaño);
+    outline: red 2px solid;
 }
 
 .tarjetas {
     margin-top: 10px;
+   
+    outline: blue 2px solid;
 }
 
 .images-card {
-    height: 250;
-    width: 50px;
+   /*outline: red 2px solid;*/
+   padding-top: 5px;
+   
 }
 
-.personas1 {
-    background-color:chartreuse;
-    float: left;
-    align-items: center;
-    margin: 5px;
-}
 
 .img_footer {
     width: 80px;
@@ -296,7 +276,10 @@ h1 {
     background-color: grey;
 }
 
-
+.prueba{
+    outline: red 2px solid;
+    margin-top: 3px;
+}
 
 /* que es lo que tengo que hacer para hacer responsive el texto
 usar las variables que tengo dedinidas arriba de todo en la parte de root.
