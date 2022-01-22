@@ -211,14 +211,29 @@ h1 {
 .contenedor-carru {
     outline: grey 2px solid;
     padding: 5px;
-    width: 600px;
-    margin-right:auto;
-    margin-left: auto;
+    margin-left: 10px;
+    margin-right: 10px;  
+    margin-bottom: 20px;
 }
 
 .carousel {
     /*margin-bottom: 10px;*/
-    outline: grey 2px solid;
+    outline: rgb(219, 21, 21) 2px solid;
+    padding: 30px;
+      
+}
+
+.imagen {
+    height: 35rem;
+}
+
+.vivienda-titulo {
+    text-align: center;
+}
+
+.texto-img{
+    font-weight: 600;
+    font-size: var(--fontsize-600);
 }
 
 .formulario {
