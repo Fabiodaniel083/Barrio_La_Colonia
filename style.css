@@ -1,9 +1,15 @@
 :root {
   --fontsize-xl: 4rem;
   --fontsize-600: 2rem;
+  --fontsize-imagen: 2rem;
   --carrousel-tam: 5rem;
   --tarjetas-tamaño: 3rem;
+  --fontsize-tarjeta: 1.1rem;
   --fs-form: 1.75rem;
+
+  --tamaño-img-card-width: 9.25rem;
+  --tamaño-img-card-heigth: 11.18rem;
+
   --bk-todo: #EAFAF9;
   --bk-vi: #c2f7eb;
 }
@@ -14,6 +20,12 @@
     --fontsize-600: 1.50rem;
     --carrousel-tam: 3.75rem;
     --tarjetas-tamaño: 2.5rem;
+    --fontsize-tarjeta: 0.90rem;
+
+    --tamaño-img-card-width: 9.25rem;
+  --tamaño-img-card-heigth: 11.18rem;
+
+    
   }
 }
 
@@ -22,7 +34,13 @@
       --fontsize-xl: 3rem;
       --fontsize-600: 1.25rem;
       --carrousel-tam: 3rem;
-      --tarjetas-tamaño: 3rem;
+      --tarjetas-tamaño: 2rem;
+      --fontsize-tarjeta: 0,70rem;
+
+  --tamaño-img-card-width: 9.25rem;
+  --tamaño-img-card-heigth: 11.18rem;
+
+      
     }
   }
   
@@ -31,7 +49,9 @@
       --fontsize-xl: 2rem;
       --fontsize-600: 1rem;
       --carrousel-tam: 2.6rem;
-      --tarjetas-tamaño: 2rem;
+      --tarjetas-tamaño: 1.75rem;
+      --fontsize-tarjeta: 0.5rem;
+      
     }
   }
 
@@ -154,7 +174,8 @@ font-family: roboto-medium;
     }
 
 .card-text{
-    font-family: roboto; 
+    font-family: roboto;
+    font-size: var(--fontsize-tarjeta); 
     
 }   
 .card-title {
@@ -214,11 +235,12 @@ h1 {
     margin-left: 10px;
     margin-right: 10px;  
     margin-bottom: 20px;
+    background-color:rgb(172, 169, 169);
 }
 
 .carousel {
     /*margin-bottom: 10px;*/
-    outline: rgb(219, 21, 21) 2px solid;
+    outline: rgb(14, 13, 13) 2px solid;
     padding: 30px;
       
 }
@@ -232,8 +254,7 @@ h1 {
 }
 
 .texto-img{
-    font-weight: 600;
-    font-size: var(--fontsize-600);
+    font-size: var(--fontsize-imagen);
 }
 
 .formulario {
@@ -245,8 +266,6 @@ h1 {
 }
 
 .form-contenedor {
-  background-color:burlywood;
- 
   font-family: qontra;
  font-size: var(--fs-form);
  
@@ -259,19 +278,24 @@ h1 {
 
 .contenedor-tarjeta{
     width: var(--tarjetas-tamaño);
-    outline: red 2px solid;
+    
 }
 
 .tarjetas {
     margin-top: 10px;
    
-    outline: blue 2px solid;
-}
+    }
 
 .images-card {
-   /*outline: red 2px solid;*/
+   
    padding-top: 5px;
    
+}
+
+.tamaño-imagen {
+    height: var(--tamaño-img-card-heigth);
+    width: var(--tamaño-img-card-width);
+
 }
 
 
@@ -291,10 +315,7 @@ h1 {
     background-color: grey;
 }
 
-.prueba{
-    outline: red 2px solid;
-    margin-top: 3px;
-}
+
 
 /* que es lo que tengo que hacer para hacer responsive el texto
 usar las variables que tengo dedinidas arriba de todo en la parte de root.
