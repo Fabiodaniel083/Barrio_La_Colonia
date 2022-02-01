@@ -330,3 +330,19 @@ border: red 2px solid;
 
 
   /* fin de css de animacion de texto*/
+
+.tarjetas-css-izquierda {
+    border: black 2px solid;
+    display: flex;
+    margin-left: 50px;
+    padding: 5px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
