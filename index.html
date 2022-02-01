@@ -100,21 +100,21 @@
         <img src="img/monoambiente.jpg" class="d-block w-100 imagen" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Departamentos de 2 ambientes</h2>
-          <p>Gran espacio y luminocidad.</p>
+          <h3>Gran espacio y luminocidad.</h3>
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/monoambiente-2.jpg" class="d-block w-100 imagen" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Departamentos de 2 ambientes</h2>
-          <p>Salida a la piscina.</p>
+          <h3>Salida a la piscina.</h3>
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/monoambiente-3.jpg" class="d-block w-100 imagen" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Departamentos de 2 ambientes</h2>
-          <p>Unidades amuebladas listo para habitar.</p>
+          <h3>Unidades amuebladas listo para habitar.</h3>
         </div>
       </div>
     </div>
@@ -268,33 +268,30 @@
 
        <div class="mb-3 col-md-8" >
           <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" >
+          <input type="text" class="form-control" id="nombre">
         </div>
-
-      
-
      <div class="mb-3 col-md-8">
            <label for="apellido" class="form-label">Apellido</label>
-           <input type="text" class="form-control" >
+           <input type="text" class="form-control" id="apellido">
       </div>
 
       <div class="mb-3 col-md-8" >
         <label for="Email" class="form-label">Correo Electronico</label>
-        <input type="email" class="form-control" >
+        <input type="email" class="form-control" id="mail">
       </div>
       <hr class="separador"/> <!--SEPARADOR-->
       <div class="col-md-8">
-    <select class="form-select " aria-label="Default select example">
+    <select class="form-select " aria-label="Default select example" id="opcion">
 
       <option selected>Selecciona el Desarrollo Urbanistico</option>
-      <option value="1">Morón - Buenos Aires</option>
-      <option value="2">Parana - Entre Rios</option>
-      <option value="3">Monserrat - CABA</option>
+      <option value="Morón-Buenos Aires">Morón - Buenos Aires</option>
+      <option value="Parana - Entre Rios">Parana - Entre Rios</option>
+      <option value="Monserrat - CABA">Monserrat - CABA</option>
     </select>
   </div>
   <hr class="separador"/> <!--SEPARADOR-->
 
-    <button type="submit" class="btn btn-primary col-md-8">Enviar</button>
+    <button type="submit" class="btn btn-primary col-md-8" onclick= captura() >Enviar</button>
       
   </div>
   </form>
@@ -314,5 +311,6 @@
 <!--inicio del pie de la pagina-->
   
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script type="text/JavaScript" src="js/function.js"></script>
     </body>        
 </html>
