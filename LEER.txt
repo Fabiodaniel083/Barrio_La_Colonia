@@ -17,6 +17,15 @@ imagenes de rostros: 250*304
 ME FALTA DAR INTERACTIVIDAD AL FORMUALARIO
 
 
+barra: la misma debe tener cuatro opciones: Inicio, Nosotros, Barrios (desplegable por 3) y Contacto.
+En el menu desplegable de Barrios tienen que estar los desarrollos que tengo en el list option de abajo 
+
+
+icono de inicio 
+nosotros 
+barrios 
+contacto 
+
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"> <!--CARROUSEL DE IMAGENES-->
                     <div class="carousel-inner carrousel-tam">
                       <div class="carousel-item active">
