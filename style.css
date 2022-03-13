@@ -100,36 +100,97 @@ body, html {
 
 /*INICIO DE LA BARRA DE NAVEGACION*/
 
-nav ul li {
-    background-color:rgb(140, 150, 243);
-    display: inline-block;
-    overflow:hidden; 
-    width:300px;
-    height:100%;
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+   
+}
+nav {
+     
+    width: 100%;
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav > ul {
+    display: table; 
+    overflow: hidden;
+    width: 100%;
+    background:rgb(172, 169, 169);
     position: relative;
-    padding: 20px;
-    line-height: 20px;
-    text-align: center;
-}
-nav ul li a {
-    text-decoration: none;
-}
-nav ul li span {
-    color:rgb(255, 255, 255);
 }
 
-nav ul li ul {
+nav > ul li {
+display: table-cell;
+
+}
+
+/*SUBMENU*/
+nav > ul > li:hover > ul {
+    display: block;
+}
+
+nav > ul > li > ul {
+    display: block;
+    background-color:rgb(172, 169, 169);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+      
+}
+
+nav > ul > li > ul {
     display: none;
+} 
+
+nav > ul li a {
+    color: white;
+    display: block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
-.nav__Container {
-  position: fixed;
+nav > ul > li > li > li a:hover {
+    background-color: aqua;
 }
+
+nav > ul > li > a > span {
+    background-color:rgb(236, 236, 15);
+    display: block;
+    height: 100%;
+    width: 100%;    
+    left: 0px;
+    position: absolute;
+    top: -55px;
+} 
+
+nav > ul > li > a:hover > span {
+     top: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
 .iconos {
-    height: 30px;
+    
     width: 30px;
-    margin-right: 20px;
-    margin-bottom: 10px;
+    height: 30px;
 }
 
 
