@@ -100,16 +100,20 @@ body, html {
 
 /*INICIO DE LA BARRA DE NAVEGACION*/
 
-header {
+.nav__Container {
     width: 100%;
-    position: fixed;
-    z-index: 100;
    
+    position: fixed;
+    
+    z-index: 100;
+  
 }
 nav {
-     
-    width: 100%;
-    max-width: 100%;
+    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.30);
+  display: block;
+  width: 100%;
 }
 
 nav ul {
@@ -118,77 +122,98 @@ nav ul {
 
 nav > ul {
     display: table; 
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 100%;
-    background:rgb(172, 169, 169);
+    background: var(--bk-vi);
     position: relative;
+    
+
 }
 
-nav > ul li {
+nav > ul > li {
 display: table-cell;
+width: 300px;
 
 }
 
 /*SUBMENU*/
+
+
+
 nav > ul > li:hover > ul {
+    
     display: block;
+    background: var(--bk-vi);
+    width: 330px;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    border: 1px solid red;
+   
 }
 
 nav > ul > li > ul {
-    display: block;
-    background-color:rgb(172, 169, 169);
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-      
-}
-
-nav > ul > li > ul {
-    display: none;
+   display: none;
 } 
 
-nav > ul li a {
-    color: white;
+nav > ul > li  a {
+    color:rgb(104, 104, 112);
+    font-weight: 700;
     display: block;
     line-height: 20px;
     padding: 20px;
     position: relative;
     text-align: center;
     text-decoration: none;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    
 }
 
-nav > ul > li > li > li a:hover {
-    background-color: aqua;
+nav > ul > li > span > img:hover ul {
+    background: greenyellow;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; 
 }
+
 
 nav > ul > li > a > span {
-    background-color:rgb(236, 236, 15);
-    display: block;
-    height: 100%;
-    width: 100%;    
-    left: 0px;
+    background-color:rgb(236, 236, 15);  
     position: absolute;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
     top: -55px;
 } 
 
+
+
 nav > ul > li > a:hover > span {
      top: 0;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
+nav > ul > li > a > span:hover li > a {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+
 .iconos {
-    
+    /*display: flex;*/
+    margin-top: 10px;
+   /* justify-content: center;
+    align-items: center;*/
     width: 30px;
     height: 30px;
 }
@@ -197,77 +222,6 @@ nav > ul > li > a:hover > span {
 /*FIN DE LA BARRA DE NAVEGACION*/
 
 
-/*
-.barra-navegacion {
-    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.50);
--webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.50);
--moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.50);
-font-family: roboto-medium;
-}
-/*
-.barra_nav {
-    text-align: center;
-    position: fixed;
-    background-color: var(--bk-todo);
-    width: 100%;
-    display: inline-block;
-}
-
-
-.barra_nav ul {
-    list-style: none;
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
-.barra_nav ul li {
-    display: inline-block;       
-}
-
-.barra_nav ul li a {
-    text-decoration: none;
-}
-*/
-/*** ESTILOS BOTÓN SLIDE CLOSE ***/
-/*
-.ov-btn-slide-close {
-    background: #fff; 
-    color: #4741d7; 
-    border: 1px solid #4741d7; 
-    padding: 5px;
-    border-radius: 3px; 
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    display: inline-block;
-    
-    }
-    .ov-btn-slide-close:before, .ov-btn-slide-close:after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    left: -50%;
-    background-color: #4741d7; 
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    }
-    .ov-btn-slide-close:after {
-    left: 100%;
-    }
-    .ov-btn-slide-close:hover {
-    color: #fff;
-    }
-    .ov-btn-slide-close:hover:before {
-    left: 0;
-    }
-    .ov-btn-slide-close:hover:after {
-    left: 50%;
-    }
-*/
 .card-text{
     font-family: roboto;
     font-size: var(--fontsize-tarjeta); 
