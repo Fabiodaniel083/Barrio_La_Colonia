@@ -93,8 +93,8 @@
 
 
 body, html {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     background-color: var(--bk-todo);
 }
 
@@ -112,10 +112,14 @@ nav {
     box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.30);
     -webkit-box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.30);
     -moz-box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.30);
-  display: block;
-  width: 100%;
+    /* display: block;*/
+  /*width: 100%;*/
 }
 
+.nav__Lista {
+    padding: 0%;
+    margin: 0;
+}
 nav ul {
     list-style: none;
 }
@@ -140,21 +144,8 @@ width: 300px;
 
 
 
-nav > ul > li:hover > ul {
-    
-    display: block;
-    background: var(--bk-vi);
-    width: 330px;
-    position: absolute;
-    text-align: center;
-    margin: auto;
-    border: 1px solid red;
-   
-}
 
-nav > ul > li > ul {
-   display: none;
-} 
+
 
 nav > ul > li  a {
     color:rgb(104, 104, 112);
@@ -168,14 +159,7 @@ nav > ul > li  a {
     
 }
 
-nav > ul > li > span > img:hover ul {
-    background: greenyellow;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease; 
-}
+
 
 
 nav > ul > li > a > span {
@@ -210,14 +194,29 @@ nav > ul > li > a > span:hover li > a {
 
 
 .iconos {
-    /*display: flex;*/
+   
     margin-top: 10px;
-   /* justify-content: center;
-    align-items: center;*/
+ 
     width: 30px;
     height: 30px;
 }
+/*colores de los nav*/
 
+.primero {
+    background-color: #F8C471;
+}
+
+.segundo {
+    background-color: #C39BD3;
+}
+
+.tercero {
+    background-color: #85C1E9 ;
+}
+
+.cuarto {
+    background-color: #7DCEA0;
+}
 
 /*FIN DE LA BARRA DE NAVEGACION*/
 
